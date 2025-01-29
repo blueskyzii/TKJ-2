@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h1>Dashboard</h1>
+        <ul>
+            <button>Home</button>
+            <button>Tasks</button>
+            <button>Calendar</button>
+            <button>Settings</button>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Top Bar -->
+        <div class="top-bar">
+            <h1>Welcome to Your Dashboard</h1>
+            <div class="calendar">
+                <div class="calendar-header">
+                    <button class="prev-month">&lt;</button>
+                    <div class="month-year"></div>
+                    <button class="next-month">&gt;</button>
+                </div>
+                <div class="calendar-body" style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 5px; margin-top: 10px;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Tasks Section -->
+        <div class="tasks-section">
+            <!-- Upcoming Tasks -->
+            <div class="task-list" id="upcoming-tasks">
+                <h2>Upcoming Tasks</h2>
+            </div>
+
+            <!-- Today's Tasks -->
+            <div class="task-list" id="today-tasks">
+                <h2>Today's Tasks</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
